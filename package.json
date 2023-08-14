@@ -1,0 +1,30 @@
+{
+  "name": "decimal-utils",
+  "version": "1.0.1",
+  "description": "decimal-utils",
+  "scripts": {
+    "build": "npx tsup ./src"
+  },
+  "keywords": [],
+  "author": "thr3a",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
+    "eslint-config-standard-with-typescript": "^37.0.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  }
+}
